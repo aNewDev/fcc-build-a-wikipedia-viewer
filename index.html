@@ -26,17 +26,24 @@
 
   <div class="container">
     <div class="row text-center">
-        <div id="random">
-          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Need random info? Click for new knowledge</a>
-        </div>
-        <div class="input-group" id="searchBox">
+
+        <div id="searchBox" class="input-group" >
           <input type="text" class="form-control" id="search" placeholder="Search for...">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button" onclick=getFormData()>Go!</button>
+            <button class="btn btn-default" type="button" onclick=getFormData()>Search wikipedia</button>
           </span>
         </div>
 
-        <span id="data" class="text-left"></span>
+        <div class="btn" id="random">
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button type="button" class="btn btn-default">...or get me a random wikipedia page</button></a>
+        </div>
+
+        <div class="btn" id="clear">
+          <button type="button" class="btn btn-default" onclick="showSearchBox()">Clear and Search Again</button>
+        </div>
+
+        <div id="data" class="list-group text-left">
+        </div>
 
 
     </div>
