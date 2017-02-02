@@ -6,6 +6,8 @@ html {
 body {
   padding-bottom: 60px;
   padding-top: 20px;
+  background-color: #35586C;
+  font-family: 'Indie Flower', cursive;
 }
 
 .footer {
