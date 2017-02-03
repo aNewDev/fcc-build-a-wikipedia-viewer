@@ -29,13 +29,14 @@
 
   <div class="container">
     <div class="row text-center">
-
-        <div id="searchBox" class="input-group" >
+      <form class="form-inline" id="searchBox" action="javascript:getFormData()">
+        <div class="input-group" >
           <input type="text" class="form-control" id="search" placeholder="Search for...">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button" onclick=getFormData()>Search wikipedia</button>
+            <button class="btn btn-default" type="button" id="buttonID">Search wikipedia</button>
           </span>
         </div>
+      </form>
 
         <div class="btn" id="random">
           <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button type="button" class="btn btn-default">...or get me a random wikipedia page</button></a>

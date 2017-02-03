@@ -1,7 +1,7 @@
+// on load, hide unneeded elements
 $(document).ready(function() {
   document.getElementById("clear").style.display = "none";
 });
-
 
 // get data from form and trigger wikipedia search
 function getFormData(){
@@ -50,3 +50,17 @@ function showSearchBox() {
   document.getElementById("random").style.display = "inline";
   document.getElementById("clear").style.display = "none";
 };
+
+
+/*
+
+<form class="form-inline" id="searchBox">
+  <div class="input-group" >
+    <input type="text" class="form-control" id="search" placeholder="Search for...">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" onclick=getFormData()>Search wikipedia</button>
+    </span>
+  </div>
+</form>
+
+*/
