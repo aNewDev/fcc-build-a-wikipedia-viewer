@@ -29,6 +29,8 @@
 
   <div class="container">
     <div class="row text-center">
+
+      <!-- wikipedia search -->
       <form class="form-inline" id="searchBox" action="javascript:getFormData()">
         <div class="input-group" >
           <input type="text" class="form-control" id="search" placeholder="Search for...">
@@ -38,10 +40,12 @@
         </div>
       </form>
 
+        <!-- random wikipedia page -->
         <div class="btn" id="random">
           <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button type="button" class="btn btn-default">...or get me a random wikipedia page</button></a>
         </div>
 
+        <!-- clear form and return to search -->
         <div class="btn" id="clear">
           <button type="button" class="btn btn-default" onclick="showSearchBox()">Clear and Search Again</button>
         </div>
